@@ -1,0 +1,16 @@
+aside {
+    .aside-body {
+        padding: 28px 30px;
+
+        h3 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+aside.aside-light {
+
+    .aside-body {
+        background: $color-background__light;
+    }
+}

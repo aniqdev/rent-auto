@@ -1,0 +1,128 @@
+body.space-top .page__content {
+    padding-top: $header-height;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 0;
+    }
+}
+
+.page-intro {
+    background: $color-background__light;
+    width: 100%;
+    height: 410px;
+    position: relative;
+    //z-index: $z-index__content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.page-intro__content {
+    position: relative;
+    //z-index: $z-index__content;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+    h1{
+        font-size: 42px;
+        font-weight: 600;
+        color: $text-primary;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &.invert h1 {
+        color: $white;
+    }
+}
+
+.page-breadcrumb {
+    display: flex;
+}
+
+.page-content{
+    margin-top: 300px;
+    position: relative;
+}
+
+.page-overlay {
+    margin-top: -100px;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        margin-top: -50px;
+    }
+}
+
+.top-list-page {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+
+    .caravan-list_best {
+        align-items: flex-start;
+        position: relative;
+        margin-top: 54px;
+        transform: none;
+    }
+}
+
+
+/** Content */
+.benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .benefit {
+        text-align: center;
+        padding: 1rem;
+        flex: 1 0 calc(100% / 6);
+        max-width: calc(100% / 6);
+
+        img {
+            width: 100%;
+        }
+
+        .thumb {
+            padding: 1rem 2rem;
+        }
+
+        .content {
+            font-size: .825rem;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .benefits {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .benefit {
+            flex: 1 0 60%;
+            max-width: 60%;
+        }
+    }
+}

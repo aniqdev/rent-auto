@@ -1,0 +1,55 @@
+.posts-wrapper {
+    @extend .caravan-list_best;
+
+    .post-item {
+        margin-bottom: 30px;
+    }
+}
+
+
+.div-pad{
+    padding: 10px;
+}
+
+
+.post-block-img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1399px){
+    .div-pad{
+        padding: 50px;
+        }
+}
+
+@media (max-width: 1199px){
+
+    .div-pad{
+        padding: 30px;
+        }
+
+}
+
+
+@media  (max-width: 991px) {
+    .div-pad{
+    padding: 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .div-pad{
+        padding: 0px;
+        }
+}

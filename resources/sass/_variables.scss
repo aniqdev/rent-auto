@@ -1,0 +1,103 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$primary: #3d358a;
+$secondary: #f08115;
+
+$color-bright: #fff;
+$color-dark: #383833;
+
+$text-primary: #3d358a;
+$text-white: #fefeff;
+$text-secondary: #f08115;
+
+$color-primary: #3b358b;
+$color-primary--hover: #37307c;
+$color-secondary: #f08115;
+$color-secondary--hover: #ff9124;
+
+$link-color: $text-primary !default;
+$link-decoration: none !default;
+$link-hover-color: $text-secondary !default;
+$link-hover-decoration: none !default;
+
+$color-text__primary: #423d37;
+$gray__primary: #716e69;
+$color-title-description__primary: #716e69;
+$color-title-description__secondary: #f5f5f5;
+
+$color-background__light: #f9f9ff;
+$color-background__green: #fbfcf4;
+$color-border__light: #ececec;
+
+$tablist-color: #817f7c;
+$tablist-color-active: $color-secondary;
+$tablist-color-count: #bebcb9;
+$tablist-background__light: #fefefe;
+$tablist-background-active: #ffffff;
+
+$cardbox-background__light: #fefefe;
+
+$badge-font-weight: 600;
+$badge-padding-y: .35em;
+$badge-padding-x: 1em;
+$badge-border-radius: 0;
+
+$megacheckbox-height: 138px;
+$megacheckbox-border-color: #f2f2ff;
+$megacheckbox-checkbox-color: #e9e9f0;
+$megacheckbox-thumb-background: #f5f5f9;
+
+$input-border-color: #f2f2ff;
+$input-bg-color__solid: $color-background__light;
+
+$progress-background__light: #f5f5f9;
+$progress-primary: #3d358a;
+
+$accordion-header: #3d358a;
+
+$color-overlay: rgba(0,0,0,0.45);
+
+// const
+$header-height: 130px;
+$header-logo__width: 380px;
+
+$header-top-nav__height: 40px;
+$header-bottom-nav__height: 90px;
+
+$transition-fast: 0.2s;
+$transition-medium: 0.4s;
+
+$z-index__header: 1000;
+$z-index__content: 500;
+
+$box-shadow: 0px 4px 24px 1px rgb(1 1 1 / 5%);
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #b0cc35;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$alert-padding-y: 1rem;
+$alert-padding-x: 2rem;
+$alert-margin-bottom: 1rem;
+$alert-border-radius: 0;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 1310px,
+    xl: 1410px
+);

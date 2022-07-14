@@ -1,0 +1,66 @@
+.date-picker__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+    }
+}
+
+.date-picker {
+    position: relative;
+    margin-right: 15px;
+
+    @include media-breakpoint-down(md) {
+        margin-right: 0;
+    }
+}
+
+.date-picker-calendar {
+    position: relative;
+    margin: 0;
+}
+
+.date-picker__input {
+    width: 270px;
+    padding: 15px 20px;
+    background-color: $color-bright;
+    font-size: 14px;
+    line-height: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus,
+    &:active{
+        outline: none;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 6px;
+    }
+}
+
+.vc-popover-content-wrapper{
+    width: 100% !important;
+    top: 100% !important;
+    transform: translate(0,0) !important;
+
+    .vc-day-content,
+    .vc-highlight{
+        border-radius: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .vc-highlight,
+    .vc-day-content:focus{
+        background-color: $color-primary !important;
+    }
+}
+
+.vc-container{
+    width: 100% !important; 
+    border-radius: 0 !important;
+}

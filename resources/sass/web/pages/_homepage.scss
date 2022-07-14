@@ -1,0 +1,99 @@
+.hp-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateY(-32px);
+    position: relative;
+    z-index: 10;
+
+    h1{
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+        transform: translateY(44px);
+    }
+}
+
+.hp-content{
+    margin-top: 260px;
+    margin-bottom: 120px;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        padding: 48px 0;
+        margin: 0;
+    }
+}
+
+.top-list{
+    position: relative;
+    /* margin-bottom: -160px; */
+    margin-bottom: 40px;
+    z-index: 9;
+    /* padding-bottom: 60px;
+    margin-bottom: 280px;
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 0;
+        margin-bottom: -120px;
+    } */
+}
+
+.rent-car-tenerif-photo img{
+    width: 100%;
+}
+
+.avg-rating{
+    font-size: 20px;
+}
+
+.home-rating{
+    font-size: 24px;
+}
+
+.rating-autor-home{
+    margin: 0;
+}
+
+
+
+@media  (max-width: 991px) {
+    .home-page-rent-car-tenerif{
+    margin-top: 5%;
+    }
+}
+
+.popup-title{
+    font-size: 28px;
+    text-align: center;
+    color: $text-primary;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.popup-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.popup-img{
+    opacity: 1;
+}
+
+.popup-img img{
+    width: 100%;
+
+}
+
+.popup-button{
+    display: block;
+    text-align: center;
+}
+
+.popup-body{
+    padding: 0;
+}
+

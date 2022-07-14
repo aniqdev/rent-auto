@@ -1,0 +1,56 @@
+.page__wrapper{
+    width: 100%;
+}
+
+.page__content{
+    width: 100%
+}
+
+.card-4{
+    width: calc(25% - 30px);
+    margin: 0 15px;
+    cursor: pointer;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+.card-3 {
+    width: calc(33.33333% - 30px);
+    margin: 0 15px;
+    cursor: pointer;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+.content--center {
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+        padding: 0 12px;
+    }
+}
+
+.compare__content {
+
+
+    .cta__wrapper {
+        padding: 30px 90px;
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .content--center-adv-text{
+        color: #3b358b!important;
+    }
+    .content--center-adv-text{
+        color: #3b358b;
+
+    }
+}

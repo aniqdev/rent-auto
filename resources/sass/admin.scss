@@ -1,0 +1,76 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Font Awesome icons
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+@import "admin/init";
+
+@import '~bootstrap/scss/bootstrap';
+@import '~animate.css/animate.min.css';
+
+// Components
+@import
+    "admin/components/utilities",
+    "admin/components/burger-icon",
+    "admin/components/card",
+    "admin/components/wizard",
+    "admin/components/type",
+    "admin/components/breadcrumb",
+    "admin/components/nav",
+    "admin/components/alert",
+    "admin/components/buttons",
+    "admin/components/code",
+    "admin/components/dropdown",
+    "admin/components/forms",
+    "admin/components/grid",
+    "admin/components/modal",
+    "admin/components/progress",
+    "admin/components/table",
+    "admin/components/popover",
+    "admin/components/tooltip",
+    "admin/components/accordion",
+    "admin/components/datatable",
+    //"admin/components/checkbox",
+    "admin/components/radio",
+    "admin/components/switch",
+    "admin/components/option",
+    "admin/components/dialog",
+    "admin/components/strikethrough",
+    "admin/components/separator",
+    "admin/components/image-input",
+    "admin/components/label",
+    "admin/components/loader",
+    "admin/components/symbol",
+    "admin/components/pulse",
+    "admin/components/page-loader",
+    "admin/components/quick-search",
+    "admin/components/scrolltop",
+    "admin/components/spinner",
+    "admin/components/sticky-toolbar",
+    "admin/components/svg-icon",
+    "admin/components/svg",
+    "admin/components/timeline",
+    "admin/components/timeline-2",
+    "admin/components/timeline-3",
+    "admin/components/timeline-4",
+    "admin/components/timeline-5",
+    "admin/components/timeline-6",
+    "admin/components/overlay",
+    "admin/components/wave",
+    "admin/components/list",
+    "admin/components/bullet",
+    "admin/components/navi",
+    "admin/components/ribbon",
+    "admin/components/offcanvas",
+    "admin/components/toggle",
+    "admin/components/review",
+    "admin/components/gallery",
+    "admin/components/reservedit";
+    // "admin/components/rservation-edit";
+
+// Layout
+@import "admin/layout/init";

@@ -1,0 +1,24 @@
+.dictionaries-wrapper {
+    @extend .caravan-list_best;
+    
+    justify-content: flex-start;
+}
+
+.dictionary-item {
+    @extend .card-4;
+
+    margin-bottom: 30px;
+    cursor: auto;
+}
+
+.dictionary-nav {
+    margin-bottom: 2rem;
+
+    .nav-item:not(:last-child) {
+        border-right: 1px solid #EDEDED;
+    }
+}
+
+.dictionary-item__link {
+    text-decoration: underline;
+}

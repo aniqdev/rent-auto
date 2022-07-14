@@ -1,0 +1,22 @@
+.clients-gallery{
+
+}
+
+.clients-gallery .client-image-link{
+    display: block;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.clients-gallery .client-image{
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+}
+
+/* .client-gallery-text span{
+    font-size: 13px;
+    color: #838383;
+} */

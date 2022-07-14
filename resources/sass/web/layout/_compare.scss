@@ -1,0 +1,133 @@
+$vehicle-item-space: 130px;
+
+.lineup-compare {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.lineup-compare__category {
+    font-size: 12px;
+    white-space: normal;
+    vertical-align: top;
+    background: $white;
+    width: 380px;
+    flex: 1 0 380px;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+.lineup-compare__category-intro {
+    height: 358px;
+    padding: 30px;
+}
+
+.lineup-compare__data {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+}
+
+.lineup-compare__category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vehicle-item {
+    background: #fff;
+    margin-top: $vehicle-item-space;
+    flex: none;
+
+    @include media-breakpoint-down(md) {
+        margin-top: $vehicle-item-space / 2;
+    }
+
+    .vehicle__thumbnail {
+        text-align: center;
+        /* padding: 0 52px; */
+        margin-top: -$vehicle-item-space;
+
+        @include media-breakpoint-down(md) {
+            margin-top: -$vehicle-item-space / 2;
+        }
+
+        & > a {
+            width: auto;
+            height: calc(100% - 1500px);
+            display: block;
+        }
+
+        img {
+            max-width: 240px;
+
+            @include media-breakpoint-down(md) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .vehicle__name {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        /* background: $secondary; */
+        min-height: 68px;
+        padding: 0 20px;
+
+        a {
+            color: $color-text__primary;
+        }
+    }
+
+    .vehicle__price {
+        @extend .cardbox__price;
+
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.vehicle__list {
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    .list__name {
+        font-weight: 600;
+        color: #fff;
+        background: $primary;
+        padding: 20px;
+    }
+
+    .list__values {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .list__item {
+        font-size: 13px;
+        line-height: 18px;
+        list-style-type: none;
+        padding: 16px 20px;
+        margin: 0;
+
+        &:nth-child(odd) {
+            background: $color-background__light;
+        }
+
+        .mobile-label {
+            display: none;
+
+            @include media-breakpoint-down(md) {
+                font-weight: 600;
+                display: block;
+            }
+        }
+    }
+}

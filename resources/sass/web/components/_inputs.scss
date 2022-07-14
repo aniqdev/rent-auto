@@ -1,0 +1,48 @@
+.material-control {
+    label {
+        white-space: nowrap;
+        margin-bottom: .3rem;
+
+        span {
+            font-size: 16px;
+            font-weight: 300;
+            color: $text-primary !important;
+        }
+    }
+
+    .form-control {
+        border-color: $input-border-color;
+        border-radius: 0;
+        padding: 24px 14px;
+
+        &:focus {
+            border-color: $text-primary;
+            box-shadow: none;
+        }
+    }
+}
+
+.form-control-solid {
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #495057;
+    background: $input-bg-color__solid;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    height: calc(1.6em + 0.75rem + 2px);
+    padding: 24px 14px;
+    display: block;
+
+    &:focus {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+select.form-control-solid {
+    height: auto;
+    padding: 14px 14px;
+}

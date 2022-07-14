@@ -1,0 +1,39 @@
+.cta__wrapper{
+    width: 100%;
+    padding: 90px;
+
+    @include media-breakpoint-down(md) {
+        padding: 40px 20px;
+    }
+}
+
+.cta-header{
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-size: 32px;
+        color: $color-primary;
+        margin: 0;
+        margin-bottom: 15px;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+    }
+}
+
+.cta-content{
+    text-align: center;
+
+    p {
+        font-size: 18px;
+        color: $color-title-description__primary;
+    }
+
+    .primary-btn {
+        padding: 16px 30px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+}

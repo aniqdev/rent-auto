@@ -1,0 +1,70 @@
+div[role="tabpanel"] {
+    position: relative;
+
+    .nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        color: $tablist-color;
+        background: $tablist-background__light;
+        padding: 14px 26px;
+        margin: 0 7px;
+
+        &.active {
+            color: $tablist-color-active;
+            background: $tablist-background-active;
+            box-shadow: inset 0px -2px 0px 0px $tablist-color-active;
+
+            .count {
+                color: inherit;
+            }
+        }
+
+        
+
+        .count {
+            font-weight: 400;
+            color: $tablist-color-count;
+        }
+    }
+}
+
+section#parametry {
+    div[role="tabpanel"] {
+        .nav-item {
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            color: $tablist-color;
+            background: $tablist-background__light;
+            padding: 14px 26px;
+            margin: 0 7px;
+
+            &.active {
+                color: $tablist-color-active;
+                background: $tablist-background-active;
+                box-shadow: inset 0px -2px 0px 0px $tablist-color-active;
+            }
+        }
+
+        .tab-pane {
+            background: $white;
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+            padding: 32px 30px;
+        }
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    .nav-item {
+        width: 100%;
+        margin: 0 !important;
+        display: block;
+    }
+}

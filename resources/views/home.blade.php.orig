@@ -1,0 +1,43 @@
+@extends('layouts.app')
+
+@section('content')
+
+    <intro-img bg="/images/web/hp-img.jpg" >
+    
+        <div class="hp-header">
+
+            <h1 class="page-header">Půjčovna obytných vozů</h1>
+            <date-picker></date-picker>
+
+        </div>
+
+        <caravan-list></caravan-list>
+
+    </intro-img>
+
+    <div class="hp-content">
+
+        <div class="top-list">
+
+            <div class="content--center">
+
+                <h2>Nejoblíbenejší vozy k pronájmu</h2>
+                <p>Favoriti mezi obytníma vozama</p>
+
+            </div>
+
+            <caravan-list view="topList"></caravan-list>
+
+        </div>
+
+        <trees-bg></trees-bg>
+
+        <adv-section></adv-section>
+
+    </div>
+
+    <cta-section></cta-section>
+
+    <the-map></the-map>
+    
+@endsection

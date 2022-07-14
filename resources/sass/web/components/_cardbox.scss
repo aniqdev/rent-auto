@@ -1,0 +1,410 @@
+.cardbox-container {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+@media(max-width: 1200px){
+    .cardbox-container{
+        margin-bottom: 130px;
+    }
+}
+
+@media(max-width: 992px){
+    .cardbox-container{
+        margin-bottom: 130px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .cardbox-container{
+
+    }
+}
+
+@media(max-width: 576px){
+    .cardbox-container{
+
+    }
+}
+
+.cardbox {
+    background: $cardbox-background__light;
+    /* padding: 38px 30px 0; */
+    padding: 0;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: $color-text__primary;
+        margin-bottom: 6px;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:hover {
+            color: $text-primary
+        }
+    }
+
+    .cardbox__subtitle {
+        font-size: 18px;
+        color: $color-title-description__primary;
+        width: 88%;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .cardbox__price {
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .cardbox__actions {
+
+        .old-price-form{
+            color: #959292!important;
+        }
+
+        .old-price-form:before{
+            border-bottom: 2px solid red;
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 10%;
+            transform: rotate(9deg);
+        }
+
+        a {
+            width: 208px;
+            display: inline-block;
+            margin-bottom: 15px;
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .name {
+            font-size: 14px;
+        }
+
+        .text-secondary {
+            font-size: 24px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: $color-title-description__primary;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 28px;
+            color: $color-secondary;
+
+            .text-muted {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .message {
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+}
+
+// .blog-detail-vozu{
+//     width: 100%!important;
+// }
+
+body.pricelist  {
+    .cardbox-container {
+        box-shadow: none;
+    }
+
+    .cardbox {
+        background: transparent;
+        padding: 0 12px;
+        margin-bottom: 1rem;
+    }
+
+    .cardbox-header {
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+            position: static;
+        }
+    }
+
+    .cardbox-body {
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+
+        @include media-breakpoint-down(md) {
+            position: relative;
+        }
+    }
+
+    .cardbox__thumbnail {
+        img {
+            max-width: 100%;
+            min-height: auto;
+        }
+    }
+
+    .tenerife {
+        font-weight: 600;
+        text-align: center;
+        text-orientation: mixed;
+        writing-mode: vertical-rl;
+        color: $white;
+        background: #A9C13F;
+        height: 100%;
+        padding: 0 toRem(6);
+        position: absolute;
+        top: 0;
+        right: 15px;
+
+        @include media-breakpoint-down(md) {
+            text-orientation: unset;
+            writing-mode: unset;
+            width: 100%;
+            height: auto;
+            left: 0;
+        }
+    }
+}
+
+.cardbox-header {
+    padding: 0 30px;
+
+    @include media-breakpoint-down(md) {
+        padding: 0 12px;
+        margin: 0;
+    }
+}
+
+.cardbox__thumbnail {
+    position: relative;
+
+    img {
+        max-width: 184px;
+        min-height: 184px;
+    }
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+    }
+}
+
+.cardbox__flags {
+    font-size: .8rem;
+    font-weight: 600;
+    color: $white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    .flag {
+        background: rgba(61, 53, 138, .6);
+        padding: .35em 1em;
+    }
+}
+
+.cardbox__price {
+    .title {
+        font-size: 14px;
+        color: $color-title-description__primary;
+    }
+
+    .price {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 28px;
+        color: $color-secondary;
+
+        .text-muted {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.cardbox-parameters {
+    background: $color-background__light;
+    width: 100%;
+    min-height: 112px;
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+        display: none !important;
+    }
+}
+
+.cardbox__parameter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0px;
+
+    .description {
+        font-size: 14px;
+        color: $color-title-description__primary;
+    }
+
+    .primary-value {
+        font-size: 24px;
+        font-weight: 600;
+        color: $text-primary;
+    }
+}
+
+.cardbox-icons {
+    background: $text-primary;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 30px;
+}
+
+.cardbox-icons.winter {
+    background: $text-primary url('images/web/snow-overlay.png') repeat-x center top;
+}
+
+.winter-icon {
+    font-size: 6.4rem;
+    line-height: 1;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0,140,255,1) 0%, rgba(0,204,255,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: -6px;
+    right: 0;
+    opacity: .4;
+
+    span {
+        font-size: .815rem;
+        display: block;
+    }
+}
+
+.summer-icon {
+    font-size: 6.4rem;
+    line-height: 1;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(254,186,56,1) 0%, rgb(255, 223, 99) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: -6px;
+    right: 0;
+    // opacity: 1;
+
+    img {
+        width: 100%;
+        max-width: 102px;
+    }
+
+    span {
+        font-size: .815rem;
+        display: block;
+    }
+}
+
+.cardbox__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+
+    .svg-icon {
+        max-width: 20px;
+        max-height: 15px;
+        margin-right: 6px;
+    }
+
+    .value {
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+
+        &.weekend {
+            font-size: 10px;
+        }
+    }
+}
+
+.cardbox-table {
+    font-size: 13px;
+    background: $color-background__light;
+    width: 100%;
+    padding: 0 30px;
+
+    .table {
+        width: 100%;
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+   /*  .cardbox-parameters {
+        flex-wrap: wrap;
+    } */
+
+    .cardbox__parameter {
+        flex: 1 0 50%;
+    }
+
+    .cardbox__icon {
+        .value {
+            display: none;
+        }
+    }
+
+    .product-header {
+        .d-flex {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-header__item {
+            flex-wrap: wrap;
+        }
+    }
+
+    .winter-icon {
+        font-size: 3rem;
+        top: -50px;
+
+        span {
+            display: none;
+        }
+    }
+
+    .summer-icon {
+        font-size: 3rem;
+        top: -50px;
+
+        span {
+            display: none;
+        }
+    }
+
+
+
+
+
+}

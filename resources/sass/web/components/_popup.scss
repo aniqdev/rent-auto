@@ -1,0 +1,35 @@
+.popup {
+    .container-fluid {
+        padding: 0;
+    }
+
+    .modal-content {
+        border: none;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .modal-body {
+        background: url('images/bg-trees.svg') no-repeat center bottom;
+        padding-left: 0;
+        padding-right: 0;
+
+        h2 {
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $text-secondary;
+        }
+    }
+
+    .popup-content {
+        /* background: $white; */
+    }
+
+    .popup-footer {
+        width: 100%;
+    }
+
+    .popup-bg {
+
+    }
+}

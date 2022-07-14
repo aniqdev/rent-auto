@@ -1,0 +1,231 @@
+.elipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.last-minutes-banner{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.caravan-block{
+    text-align: center;
+    align-items: center;
+}
+
+
+.block-last {
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+
+.last-caravan-block{
+    // padding: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.caravan-info-wrap{
+    margin-top: 6px;
+    box-shadow: 0px 0px 4px 0px #7a6e6e;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.caravan-price-wrap{
+    display: grid;
+    padding: 0px 20px;
+}
+
+.caravan-price-last-sale-old:before{
+    border-bottom: 2px solid red;
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 18px;
+    transform: rotate(360deg);
+}
+
+.btn-to-form{
+    background-color: #f08115;
+    font-size: 14px;
+    padding: 5px;
+    color: #fff;
+}
+
+.btn-to-form:hover{
+    color: #fff;
+    background-color: #f08115db;
+}
+
+
+
+.btn-to-calendar{
+    background-color: #3b358b;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-to-calendar:hover{
+    color: #fff;
+    background-color: #3b358beb;
+}
+
+.caravan-date-title{
+    color: #3b358b;
+    font-weight: bold;
+}
+
+.carvan-img{
+    position: relative;
+}
+
+.for-sale{
+    position: absolute;
+    // width: 15%;
+    bottom: 21px;
+    fill: red;
+}
+
+.caravan-name{
+    // max-width: fit-content;
+}
+
+.days-for-rent{
+    color: #3b358b;
+    font-weight: 700;
+}
+
+.caravan-name h4{
+    color: #3b358b;
+
+}
+
+.caravan-avalibal-from,
+.caravan-avalibal-to{
+    color: #3b358b;
+    font-weight: 700;
+}
+
+.review-text-admin{
+    font-size: 14px;
+}
+
+.caravan-price-last-title{
+    padding: 0;
+    margin: 0;
+    color: rgba(59, 53, 139, 0.9215686275);
+}
+
+.caravan-price-last-sale-old{
+    margin-left: 20px;
+    font-size: 21px;
+    color: rgba(240, 129, 21, 0.8588235294);
+}
+
+.caravan-price-last-sale-percent{
+    margin-left: 20px;
+    font-size: 21px;
+    color: red;
+}
+
+.caravan-price-last-sale-new{
+    margin-left: 20px;
+    font-size: 21px;
+    color: red;
+}
+
+.last-minute-overplay{
+    margin-top: -200px;
+}
+
+.top-text-lastminute{
+}
+
+.top-text-lastminute-title{
+    margin: 40px 0;
+    text-align: center;
+}
+
+.last-min-page{
+    height: 520px;
+}
+
+.last-min-page-content::after {
+    height: 133%!important;
+}
+
+.top-text-last-min-title{
+    margin-top: 18%;
+}
+
+.emty-last-minute{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15%;
+    color: #5a5a5a;
+}
+
+@media(max-width: 1200px){
+    .top-text-last-min-title{
+        margin-top: 19%;
+    }
+    .last-min-page-content::after{
+
+    }
+}
+
+@media(max-width: 992px){
+    .top-text-last-min-title{
+        margin-top: 24%;
+    }
+    .last-min-page-content::after{
+        bottom: -562px!important;
+    }
+
+}
+
+@media(max-width: 768px){
+    .top-text-last-min-title{
+        margin-top: 30%;
+    }
+    .last-min-page-content::after{
+        bottom: -605px!important;
+    }
+}
+
+@media(max-width: 576px){
+    .top-text-last-min-title{
+        margin-top: 55%;
+    }
+    .last-min-page-content::after{
+        bottom: -636px!important;
+    }
+}
+
+//   .block-last:before {
+//     content: '';
+//     position: absolute;
+//     top: 100%;
+//     right: 0;
+//     border-left: 2px solid orange;
+//     width: calc(100% - 100px);
+//   }
+
+
+// text-transform: uppercase;
+// text-align: center;
+// font-weight: 700;
+// font-size: 10px;
+// line-height: 17px;
+// padding: 15px 3px;
+// background-color: #3b358b;
+// color: #fff;
+// border: none;
+// outline: none;
+// transition: all 0.2s ease;

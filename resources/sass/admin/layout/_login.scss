@@ -1,0 +1,10 @@
+#loginBody,
+#passwordBody {
+    background: url('../images/login-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#loginBody form,
+#passwordBody form {
+    box-shadow: 0 0 80px 0 rgb(77 84 124 / 9%);
+}

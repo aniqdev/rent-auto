@@ -1,0 +1,50 @@
+body{
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-header{
+    color: $white;
+    margin: 0;
+    font-size: 42px;
+    line-height: 42px;
+}
+
+h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: $color-primary;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.content-title-description {
+    font-size: 20px;
+    font-weight: 300;
+    color: $color-title-description__primary;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: $text-primary;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-text__primary;
+}
+
+.elipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

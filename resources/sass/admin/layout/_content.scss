@@ -1,0 +1,29 @@
+//
+// Content
+//
+
+// Desktop Mode
+@include media-breakpoint-up(lg) {
+	.content {
+		padding: get($page-padding, desktop) 0;
+	}
+}
+
+// Tablet & Mobile Modes
+@include media-breakpoint-down(md) {
+	.content {
+		padding: get($page-padding, tablet-and-mobile) 0;
+	}
+}
+
+.tinyeditor {
+	overflow-y: scroll;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    width: 100%;
+    min-height: 260px;
+    padding: 20px;
+    display: block;
+    position: relative;
+}

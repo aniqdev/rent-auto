@@ -1,0 +1,223 @@
+//
+// Header Menu
+//
+
+// Variables
+$menu-scroll-color: #637099;
+
+// Build Desktop Header Menu Theme
+@include menu-hor-build-theme(get($header-menu-config, desktop), dark);
+
+// Build Mobile Header Menu Theme
+@include menu-ver-build-theme(get($header-menu-config, tablet-and-mobile), dark);
+
+// Header Menu Mobile Offcanvas
+@include offcanvas-build(header-menu-wrapper, tablet-and-mobile, get($header-menu-config, offcanvas-mobile));
+
+// Desktop Mode
+@include media-breakpoint-up(lg) {
+	// Header Wrapper
+	.header-menu-wrapper {
+		display: flex;
+		align-items: center;
+		/* align-items: stretch; */
+
+		body:not(.aside-enabled) & {
+			display: flex;
+			flex-direction: row;
+
+			// Logo
+			.header-logo {
+				padding: 0;
+				display: flex;
+				align-items: center;
+				margin-right: get($page-padding, desktop);
+			}
+		}
+	}
+
+	// Header Menu
+	.header-menu {
+		display: flex;
+		align-items: stretch;
+
+		// Header Nav
+		.menu-nav {
+			display: flex;
+			align-items: stretch;
+
+			> .menu-item {
+				&:first-child {
+					padding-left: 0;
+				}
+			}
+		}
+
+		// Layouts Options
+		&.header-menu-layout-default {
+			.menu-nav {
+				> .menu-item {
+					> .menu-link {
+						padding: 0.65rem 1.1rem;
+					}
+				}
+			}
+		}
+
+		&.header-menu-layout-tab {
+			.menu-nav {
+				> .menu-item {
+					margin: 0 1rem;
+					align-items: stretch;
+					border-radius: 0;
+
+					> .menu-link {
+						align-items: stretch;
+						background-color: transparent !important;
+						padding: 0 !important;
+						border-bottom: 1px solid transparent;
+						margin-bottom: -1px;
+						border-radius: 0 !important;
+					}
+
+					&:first-child {
+						margin-left: 0 !important;
+					}
+
+					&.menu-item-here,
+					&.menu-item-active {
+						> .menu-link {
+							background-color: transparent !important;
+							border-bottom: 1px solid $primary !important;
+						}
+					}
+				}
+			}
+		}
+
+		.object-selector {
+			line-height: 72px;
+		}
+	}
+}
+
+// Tablet & Mobile Modes
+@include media-breakpoint-down(md) {
+	// Header Wrapper
+	.header-menu-wrapper {
+		overflow: auto;
+		background-color: get($layout-themes, dark);
+
+		// Logo
+		.header-logo {
+			display: none;
+		}
+	}
+}
+
+// Variables
+$header-bg: get($layout-themes, light);
+$header-shadow: 0px 0px 40px 0px rgba(82,63,105, 0.1);
+
+$menu-link-bg-hover: rgba(#4d5995, 0.06);
+$menu-link-bg-active: $menu-link-bg-hover;
+$menu-link-color: #6c7293;
+$menu-link-color-hover: $primary;
+$menu-link-color-active: $primary;
+
+$topbar-border-mobile: 1px solid #eff0f6;
+$topbar-shadow-mobile: 0px 0px 40px 0px rgba(82,63,105, 0.2);
+
+// Desktop Mode
+@include media-breakpoint-up(lg) {
+	.header {
+		background-color: $header-bg;
+
+		// Fixed header
+		.header-fixed & {
+			box-shadow: $header-shadow;
+		}
+
+		// Menu
+		.header-menu {
+			.menu-nav {
+				> .menu-item {
+					> .menu-link {
+						@include border-radius(4px);
+
+						.menu-text {
+							color: $menu-link-color;
+							font-weight: 500;
+						}
+
+						.menu-arrow {
+							color: $menu-link-color;
+						}
+
+						.menu-icon {
+							color: $menu-link-color;
+						}
+
+						@include svg-icon-color($menu-link-color);
+					}
+
+					&.menu-item-here,
+					&.menu-item-active {
+						> .menu-link {
+							background-color: $menu-link-bg-active;
+
+							.menu-text {
+								color: $menu-link-color-active;
+							}
+
+							.menu-arrow {
+								color: $menu-link-color-active;
+							}
+
+							.menu-icon {
+								color: $menu-link-color-active;
+							}
+
+							@include svg-icon-color($menu-link-color-active);
+						}
+					}
+
+					&:hover:not(.menu-item-here):not(.menu-item-active),
+					&.menu-item-hover:not(.menu-item-here):not(.menu-item-active) {
+						> .menu-link {
+							background-color: $menu-link-bg-hover;
+
+							.menu-text {
+								color: $menu-link-color-hover;
+							}
+
+							.menu-hor-arrow {
+								color: $menu-link-color-hover;
+							}
+
+							.menu-icon {
+								color: $menu-link-color-hover;
+							}
+
+							@include svg-icon-color($menu-link-color-hover);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Tablet & Mobile Modes
+@include media-breakpoint-down(md) {
+	// Topbar
+	.topbar {
+		background-color: $header-bg;
+		box-shadow: none;
+
+		.topbar-mobile-on & {
+			box-shadow: $topbar-shadow-mobile;
+			border-top: $topbar-border-mobile;
+		}
+	}
+}

@@ -1,0 +1,132 @@
+$checkbox-size: 41px;
+
+.megacheckbox {
+    border: 1px solid $megacheckbox-border-color;
+    height: $megacheckbox-height;
+    padding: 0 0 0 32px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    // hover border
+    // outline pryč
+    // select options shadow preč, padding
+    // select - border skôr ako box-shadow
+    
+
+
+    @include media-breakpoint-down(md) {
+        height: auto;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &.active {
+        .label .name {
+            color: $text-primary;
+        }
+
+        .total_price {
+            color: $text-secondary;
+        }
+    }
+
+    input[type="checkbox"].checkbox {
+        appearance: none;
+        width: $checkbox-size;
+        min-width: $checkbox-size;
+        height: $checkbox-size;
+        margin-right: 1rem;
+        position: relative;
+    
+        &::after {
+            font-family: IcoFont;
+            font-size: 1.4rem;
+            line-height: $checkbox-size;
+            text-align: center;
+            color: $megacheckbox-checkbox-color;
+            background-color: transparent;
+            border-radius: 50%;
+            box-shadow: inset 0 0 0 2px $megacheckbox-border-color;
+            width: $checkbox-size;
+            height: $checkbox-size;
+            content: "\eed6";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: background-color 350ms 0ms ease, color 350ms 250ms ease;
+        }
+    
+        &:checked::after {
+            font-family: IcoFont;
+            font-size: 1.4rem;
+            color: $text-secondary;
+            background-color: $text-primary;
+            box-shadow: inset 0 0 0 2px $text-primary;
+            content: "\eed6";
+        }
+    }
+
+    .label {
+        flex-grow: 1;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .label .name {
+        font-size: 20px;
+        font-weight: 500;
+        color: $color-text__primary;
+
+        label {
+            line-height: 22px;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+    }
+
+    .label .price {
+        font-size: 14px;
+    }
+
+    .count-selector select {
+        font-size: 14px;
+        color: #423d37;
+        background: $color-background__light;
+        border: none;
+        padding: 12px 18px;
+        margin: 0 15px;
+    }
+
+    .total_price {
+        font-size: 20px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: $color-text__primary;
+        margin-right: 15px;
+    }
+
+    .thumbnail {
+        background: $megacheckbox-thumb-background;
+        height: 100%;
+        padding: 12px;
+        margin-left: auto;
+        display: flex;
+        flex: 0 0 120px;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
